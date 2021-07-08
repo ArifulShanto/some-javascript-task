@@ -44,6 +44,9 @@ var building = brickCalculator(-7);
 console.log(building);
 
 function tinyFriend(friends){
+    if(friends.length ==0){
+        return 'Friends name must be given';
+    }
     var tinyName = friends[0];
     var min = tinyName.length;
     for(var i = 0 ; i<friends.length;i++){
@@ -56,5 +59,5 @@ function tinyFriend(friends){
     return tinyName ;
 }
 
-var tinyFriendName = tinyFriend(['S','Shan','Joe']);
+var tinyFriendName = tinyFriend([]);
 console.log(tinyFriendName);
